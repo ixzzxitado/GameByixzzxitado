@@ -1,0 +1,34 @@
+#!bin/bash
+while true; do
+
+clear
+
+sleep 2
+
+echo -e " \033[1;31m [!]\033[0m \033[1;33m Want start the program?\033[0m"   
+echo ' '
+echo ' '
+
+read -p " " yn
+
+case $yn in
+        [yY] ) echo -e "\033[1;31m Starting Game...\033[0m" ;
+
+sleep 2
+
+clear
+
+bash file1
+
+
+                break;;
+           [nN] ) echo '' ;
+                exit;;
+        * ) echo -e " \033[1;33m [!]\033[0m \033[5;30m Wrong Option.\033[0m"
+esac
+
+sleep 1
+
+clear
+
+done

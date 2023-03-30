@@ -1,0 +1,79 @@
+#!bin/bash
+while true; do
+
+clear
+
+echo 'Who are you running from?'
+
+sleep 2
+
+echo -e " \033[1;31m [!]\033[0m \033[1;33m RUN!!!!!!!!!\033[0m"   
+echo ' '
+echo ' '
+echo ' '
+sleep 1
+echo ' '
+echo -e " \033[1;32m [!]\033[0m \033[1;33m [RUN]              [RUN]\033[0m"   
+echo ' '
+echo ' '
+echo ' '
+sleep 2
+echo ' '
+echo ' '
+echo ' '
+echo ' '
+echo -e " \033[0;37m [ツ]\033[0m \033[1;33m There's no way to escape (y/n) \033[0m"   
+echo ' '
+echo ' '
+echo ' '
+read -p ">>>>>>>>>>  " yn
+
+case $yn in
+        [yY] ) echo -e "\033[1;31m ツ \033[0m" ;
+
+sleep 2
+
+clear
+
+sleep 2
+
+echo -e " \033[1;32m Heath ■■■■■■■■■■■■\033[0m"
+
+sleep 1
+
+clear
+
+echo -e " \033[1;31m Heath ■\033[0m"
+
+sleep 1
+
+clear
+
+termux-open --view https://youtu.be/EU5Wf9jlIlg
+
+sleep 1
+
+clear
+
+bash file1
+                break;;
+       [nN] ) echo -e "\033[1;31m I dont know how u scape.\033[0m" ;
+
+sleep 2
+
+clear
+
+sleep 1
+
+bash newfule
+                break;;
+           [_] ) echo '' ;
+                exit;;
+        * ) echo -e " \033[1;33m [!]\033[0m \033[5;30m Wrong Option.\033[0m"
+esac
+
+sleep 1
+
+clear
+
+done

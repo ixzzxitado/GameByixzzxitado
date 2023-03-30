@@ -1,0 +1,59 @@
+#!bin/bash
+while true; do
+
+clear
+
+sleep 2
+echo -e " \033[1;31m [!]\033[0m \033[1;33m He looks dangerous\033[0m"  
+sleep 4
+echo ' '
+echo ' '
+echo ' '
+echo ' '
+echo -e " \033[1;32m [!]\033[0m \033[1;33m Move on?\033[0m"   
+echo ' '
+echo ' '
+echo ' '
+sleep 1
+echo ' '
+echo -e " \033[1;32m [!]\033[0m \033[1;33m Yes or No (y/n) \033[0m"   
+echo ' '
+echo ' '
+echo ' '
+read -p ">>>>>>>>>>  " yn
+
+case $yn in
+        [yY] ) echo -e "\033[1;31m HE CAUGHT YOU \033[0m" ;
+
+sleep 2
+
+clear
+
+sleep 2
+
+bash oppositor2
+
+                break;;
+       [nN] ) echo -e "\033[1;31m HE CAUGHT YOU \033[0m" ;
+
+sleep 2
+
+clear
+
+sleep 1
+
+echo -e "\033[1;31m D0NT RUN.\033[0m"
+
+bash oppositor2
+
+                break;;
+           [_] ) echo '' ;
+                exit;;
+        * ) echo -e " \033[1;33m [!]\033[0m \033[5;30m Wrong Option.\033[0m"
+esac
+
+sleep 1
+
+clear
+
+done
