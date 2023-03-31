@@ -18,6 +18,22 @@ sleep 2
 
 clear
 
+sleep 1
+
+pkg update && pkg upgrade -y
+
+pkg install figlet -y
+
+pkg install python -y
+
+pip install lolcat -y
+
+echo 'All Requests Installed!'
+
+sleep 2
+
+clear
+
 bash file1
 
 
