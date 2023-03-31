@@ -5,6 +5,8 @@ pkg update && pkg upgrade
 
 pkg install git
 
+pkg install moon-buggy 
+
 git clone https://github.com/ixzzxitado/GameByixzzxitado.git
 
 cd GameByixzzxitado
