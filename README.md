@@ -10,3 +10,5 @@ git clone https://github.com/ixzzxitado/GameByixzzxitado.git
 cd GameByixzzxitado
 
 bash start
+
+# please select (y/n)
